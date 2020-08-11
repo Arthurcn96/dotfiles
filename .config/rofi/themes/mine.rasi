@@ -23,7 +23,7 @@ window {
     border-radius: 15px;
     anchor: north;
     location: north;
-    y-offset: 5%;
+    y-offset: 36;
     transparency: "real";
 }
 #element {
