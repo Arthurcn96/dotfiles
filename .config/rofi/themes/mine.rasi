@@ -1,0 +1,57 @@
+configuration{
+  show-icons:         true;
+  font: "Ubuntu 20";
+  modi:               "drun,run,window";
+  display-drun:       "Aplicativos";
+  display-run:        "Rodar";
+  display-window:     "Rodando";
+  columns: 2;
+}
+* {
+    background: 	rgb(255, 255, 255);
+    background-selected: 	rgb(247,247,247);
+    current-line: rgb( 68, 71, 90);
+    selection:  	rgb(251, 251, 251);
+    foreground: 	rgb(3, 3, 3);
+    border:       rgba(0, 0, 0, 0.51);
+    comment: 		  rgb( 98, 114, 164);
+}
+window {
+    padding: 30;
+    width: 600;
+    height:300;
+    border-radius: 15px;
+    anchor: north;
+    location: north;
+    y-offset: 5%;
+    transparency: "real";
+}
+#element {
+    margin-left: 50;
+    padding: 8;
+    font: "Ubuntu 11";
+    background-color: @background;
+    text-color:       @border;
+}
+
+#inputbar {
+    spacing:    10;
+    text-color: @foreground;
+    padding:    10px ;
+}
+
+#element.selected.normal {
+    background-color: @background-selected;
+    text-color:       @foreground;
+    border-radius: 2px;
+
+}
+//Bottom
+#button.selected {
+    background-color: @current-line;
+    text-color:       @selection;
+    border-radius: 20px;
+}
+#button {
+font: "Ubuntu 17";
+}
