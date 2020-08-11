@@ -5,4 +5,4 @@ I always struggle when I need to get all my configuration into a new machine, so
 
 ## Rofi
 
-![Rofi]()
+![Rofi](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/rofi.png)
