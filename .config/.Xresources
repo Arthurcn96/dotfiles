@@ -16,7 +16,7 @@ URxvt*borderColor:                    	#101218
 URxvt*color0:                         	#53E2D1
 URxvt*color1:                       	  #5364e2
 URxvt*color2:                         	#8953e2
-URxvt*color3:                         	#e25364
+URxvt*color3:                         	#53C0E2
 URxvt*color4:                         	#5364e2
 URxvt*color5:                         	#FF0080
 URxvt*color6:                         	#8DA6CE
