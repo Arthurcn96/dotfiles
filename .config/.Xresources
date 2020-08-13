@@ -1,0 +1,47 @@
+URxvt*termName: rxvt-unicode-256color
+URxvt*buffered: false
+URxvt.intensityStyles: false
+URxvt.font: xft:SauceCodePro\ Nerd\ Font\ Mono:size=12
+URxvt.scrollBar: false
+
+URxvt*background:			[85]#141E1F
+URxvt*foreground:              		#ffffff
+URxvt*cursorColor:              	#D4FFF7
+URxvt*geometry:				110x24
+
+URxvt*highlightColor:                   #3B758C
+URxvt*highlightTextColor:               #43a5d5
+URxvt*borderColor:                    	#101218
+
+URxvt*color0:                         	#53E2D1
+URxvt*color1:                       	  #5364e2
+URxvt*color2:                         	#8953e2
+URxvt*color3:                         	#e25364
+URxvt*color4:                         	#5364e2
+URxvt*color5:                         	#FF0080
+URxvt*color6:                         	#8DA6CE
+URxvt*color7:                         	#FFFFFF
+
+URxvt*color8:                           #00675F
+URxvt*color9:                           #AF0000
+URxvt*color10:                          #140CB2
+URxvt*color11:                          #53E2D1
+URxvt*color12:                          #3856A7
+URxvt*color13:                          #FF0080
+URxvt*color14:                          #B4DFF7
+URxvt*color15:                          #FFFFFF
+
+
+
+
+URxvt*loginShell:  true
+URxvt*fading:  30
+URxvt.depth: 32
+
+
+URxvt.internalBorder: 0
+URxvt.externalBorder: 0
+
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
