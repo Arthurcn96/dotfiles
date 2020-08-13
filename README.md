@@ -5,6 +5,13 @@ I always struggle when I need to get all my configuration into a new machine, so
 
 ## [Rofi](https://github.com/davatorium/rofi)
 
-<img align="right"  width="440" max-height="240" src="https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/rofi.png" />
+![lightmode](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/rofi.png)
 
-<img align="left"  width="440" max-height="240" src="https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/rofiDark.png" />
+![darkmode](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/rofiDark.png)
+
+
+É preciso alterar o tema ativo no rofi alterando o nome do tema do arquivo `config.rasi`
+
+## [Urxvt](https://github.com/exg/rxvt-unicode)
+
+![Urxvt](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/xresource.png)
