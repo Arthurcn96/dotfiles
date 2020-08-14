@@ -13,3 +13,7 @@ I always struggle when I need to get all my configuration into a new machine, so
 ## [Urxvt](https://github.com/exg/rxvt-unicode)
 
 ![Urxvt](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/xresource.png)
+
+## [Vim](https://github.com/vim/vim)
+
+![Vim](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/vimrc.png)
