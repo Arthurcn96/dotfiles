@@ -5,9 +5,7 @@ I always struggle when I need to get all my configuration into a new machine, so
 
 ## [Rofi](https://github.com/davatorium/rofi)
 
-![lightmode](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/rofi.png)
-
-![darkmode](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/rofiDark.png)
+![rofi](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/animado.gif)
 
 
 É preciso alterar o tema ativo no rofi alterando o nome do tema do arquivo `config.rasi`
