@@ -9,7 +9,7 @@ I always struggle when I need to get all my configuration into a new machine, so
 
 ![rofi](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/animado.gif)
 
-## My [Urxvt](https://github.com/exg/rxvt-unicode) theme:
+## My [Urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode) theme:
 
 ![Urxvt](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/xresource.png)
 
