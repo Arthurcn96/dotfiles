@@ -7,6 +7,8 @@ export ZSH="/home/arthur/.oh-my-zsh"
 # Aliases for a few useful commands
 alias l='ls -l'
 alias la='ls -a'
+alias lt='tree'
+alias lta='tree -a'
 alias ip='ifconfig'
 alias x='ranger'
 
