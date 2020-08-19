@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+if [ ! -n $1 ]
+then
+       	echo Modo de uso: ./wallpaper /local/do/Wallpaper
+else
+
+	if test -f "$FILE"; then
+		rm Blur
+
+	fi
+
+		echo Criando imagem com Blur
+		gsettings set org.gnome.desktop.screensaver picture-uri .cache/Blur
+
+		convert $1 -blur 0x4 .cache/Blur
+
+		echo Salvando a Imagem
+		gsettings  set org.gnome.desktop.background picture-uri $1
+
+		echo Criando Tema
+		wal -a 90 -i $1
+
+		echo Alteração criada com sucesso
+fi
+	
+
