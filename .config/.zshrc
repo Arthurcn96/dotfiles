@@ -5,12 +5,22 @@
 export ZSH="/home/arthur/.oh-my-zsh"
 
 # Aliases for a few useful commands
-alias l='ls -l'
-alias la='ls -a'
-alias lt='tree'
-alias lta='tree -a'
-alias ip='ifconfig'
-alias x='ranger'
+alias    l='ls -l'
+alias    la='ls -a'
+alias    lt='tree'
+alias    lta='tree -a'
+alias    ip='ifconfig'
+alias    x='ranger'
+alias    qq='exit'
+alias    lg='ls -l | grep'
+
+
+
+
+
+
+
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
