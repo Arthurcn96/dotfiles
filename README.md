@@ -8,7 +8,8 @@ I always struggle when I need to get all my configuration into a new machine, so
 
 ## Programs:
  - ### [Rofi](https://github.com/davatorium/rofi)
+  ![rofi](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/animado.gif)
  - ### [Urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
  - ### [Vim](https://github.com/vim/vim)
 
-![rofi](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/animado.gif)
+
