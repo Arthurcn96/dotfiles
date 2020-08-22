@@ -1,5 +1,12 @@
-#include ".cache/wal/colors.Xresources"
 !Need to install pywal
+#include ".cache/wal/colors.Xresources"
+
+!Need to Install Urxvt-resize-font
+URxvt.perl-ext-common: default,matcher,resize-font
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+URxvt.resize-font.reset: C-Right
+URxvt.resize-font.show: R-Left
 
 URxvt*termName: rxvt-unicode-256color
 URxvt*buffered: false
