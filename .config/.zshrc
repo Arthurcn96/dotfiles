@@ -13,7 +13,7 @@ alias    ip='ifconfig'
 alias    x='ranger'
 alias    qq='exit'
 alias    lg='ls -l | grep'
-
+alias   ytdl='youtube-dl -f bestvideo+bestaudio'
 
 
 
