@@ -1,0 +1,30 @@
+#!/bin/bash
+
+if [ "$1" == "" ]
+then
+	echo Modo de uso: create-app nomeProjeto
+else
+	
+	#Iniciando projeto
+	expo init $1
+	cd $1
+	
+	#Cria a pasta source
+	mkdir $PWD/src && cd src 
+	
+	#Cria a pages
+	mkdir $PWD/pages && cd ..
+	
+	#Criar as rotas
+	touch $PWD/routes.js
+
+	#Baixando dependências
+	npm install @react-navigation/native
+	
+	#Instalando pacotes do expo
+	expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+	#Instalando a navegação que iremos usar
+	npm install @react-navigation/stack
+fi
+
