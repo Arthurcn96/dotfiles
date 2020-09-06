@@ -3,6 +3,12 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/arthur/.oh-my-zsh"
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Aliases for a few useful commands
 alias    l='ls -l'
@@ -14,13 +20,6 @@ alias    x='ranger'
 alias    qq='exit'
 alias    lg='ls -l | grep'
 alias   ytdl='youtube-dl -f bestvideo+bestaudio'
-
-
-
-
-
-
-
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
