@@ -1,0 +1,115 @@
+#!/bin/python3
+import os
+import sys
+size = len(sys.argv)
+
+def main():
+    createFolders()
+    createRoute()
+
+    for i in sys.argv[1:3]:
+
+        if (i == '-p'):
+            if size > 2:
+                for page in sys.argv[2:]:
+                    createPages(str(page))
+            else:
+                print('Missing Page name')
+
+
+
+def createFolders():
+    # Check if exists
+    if not( os.path.exists('src')):
+        # If doesnt exist create
+        os.makedirs('src')
+        os.makedirs('src/assets')
+        os.makedirs('src/pages')
+
+def createPages(page):
+    if os.path.exists('src/pages/'+page):
+        print('Page '+page+' already exists')
+    else:
+
+        dir = 'src/pages/'+page
+
+        os.makedirs('src/pages/'+page)
+        index = open('src/pages/'+page+'/index.js', 'w+')
+        index.write(
+        """
+        import React from 'react';
+        import { useNavigation } from '@react-navigation/native'
+        import { Text, View, Image, TouchableOpacity, FlatList} from 'react-native';
+
+        import styles from  './styles'
+
+
+
+        export default function """+page+"""() {
+
+            return (
+
+              <View style={styles.container}>
+                <Text> My Page<Text/>
+              </View>
+
+            );
+        }
+        """)
+
+        styles = open('src/pages/'+page+'/styles.js', 'w+')
+        styles.write(
+        """
+        import { StyleSheet, Dimensions } from 'react-native';
+        import Constants from 'expo-constants';
+
+        const { width, heigh } = Dimensions.get('screen');
+
+        export default StyleSheet.create({
+            container: {
+                flex: 1,
+            },
+        })
+        """)
+
+        index.close()
+        styles.close()
+        adicionarRoute(page)
+
+        print('Page '+page+' was created')
+
+
+def adicionarRoute(fileName):
+    line = 0
+
+
+
+# Creating a File Route
+def createRoute():
+    if not( os.path.exists('src/routes.js') ):
+        route = open('src/routes.js', 'w+')
+        route.write(
+        """import React from 'react';
+        import { NavigationContainer } from '@react-navigation/native';
+        import { createStackNavigator } from '@react-navigation/stack';
+
+        const AppStack = createStackNavigator();
+
+        // Importing pages:
+        import Page from '../pages/Page'
+
+        export default function Routes() {
+          return(
+            <NavigationContainer
+              <AppStack.Navigator screenOptions={{ headerShown: false}}>
+                // Import Navigation:
+                <AppStack.Screen name= "Page" component={Page} />
+              </AppStack.Navigator>
+            </NavigationContainer>
+          );
+        }
+        """)
+        route.close
+
+
+main()
