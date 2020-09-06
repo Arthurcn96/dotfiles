@@ -1,4 +1,4 @@
-#   
+#!/bin/python3
 #   Programa que cria um servidor http na pasta atual e gera um QR Code para o link na rede.
 #   Autor: Arthur Novais
 #
