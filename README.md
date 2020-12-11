@@ -3,12 +3,14 @@
 I always struggle when I need to get all my configuration into a new machine, so today i decided to make it easy for me, and I'm making my first dotfiles repository, with my configs and my scripts.
 
 ## My Desktop:
-![Desktop](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/Desktop.gif)
+ <img  src="https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/Desktop.gif" style="display: block;" alt="gif_relogio" class="center" width="100%"> 
+
 
 
 ## Programs:
  - ### [Rofi](https://github.com/davatorium/rofi)
-  ![rofi](https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/animado.gif)
+  <img  src="https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/animado.gif" style="display: block;" alt="gif_relogio" class="center" width="100%"> 
+
  - ### [Urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
    - [Resize](https://github.com/simmel/urxvt-resize-font) Plugin
  - ### [Vim](https://github.com/vim/vim)
