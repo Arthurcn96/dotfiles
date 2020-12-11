@@ -9,7 +9,7 @@ I always struggle when I need to get all my configuration into a new machine, so
 
 ## Programs:
  - ### [Rofi](https://github.com/davatorium/rofi)
-  <img  src="https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/animado.gif" style="display: block;" alt="gif_relogio" class="center" width="50%"> 
+  <img  src="https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/animado.gif" style="display: block;" alt="gif_relogio" class="center" width="100%"> 
 
  - ### [Urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
    - [Resize](https://github.com/simmel/urxvt-resize-font) Plugin
