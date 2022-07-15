@@ -12,9 +12,9 @@ else
 	fi
 
 		echo Criando imagem com Blur
-		gsettings set org.gnome.desktop.screensaver picture-uri .cache/Blur
+		gsettings set org.gnome.desktop.screensaver picture-uri ~/.cache/Blur
 
-		convert $1 -blur 0x4 .cache/Blur
+		convert $1 -blur 0x4 ~/.cache/Blur
 
 		echo Salvando a Imagem
 		gsettings  set org.gnome.desktop.background picture-uri $1
