@@ -1,0 +1,46 @@
+#!/bin/python3
+# from playsound import playsound
+import wget
+import bs4
+import requests
+import os
+
+link = input("Digite o link? ")
+
+fileName = input("Qual a thread das imagens? ")
+
+# Faz o request do site
+res = requests.get(link)
+
+# Criando um objeto com bs4 e estruturando em lxml
+soup = bs4.BeautifulSoup(res.text, 'lxml')
+
+# Extraindo um elemento do site
+link = ''
+aux = 1
+path = "/home/arthur/Imagens/Wallpaper/"+fileName
+
+if not os.path.exists(path):
+    os.mkdir(path)
+else:
+    print("Thread já existente. Redirecionando Arquivos")
+
+fileName = fileName + '_'
+for div in soup.find_all(class_="fileText", attrs={'href'}):
+    link = "http:"+div.find('a')['href']
+
+    # Divido o nome do arquivo baixado, pego o sufixo
+    sufixo = '.' + wget.detect_filename(link).split('.')[-1]
+    filePath = os.path.join(path, fileName+str(aux)+sufixo)
+
+    while os.path.isfile(filePath):
+        aux += 1
+        filePath = ''
+        filePath = os.path.join(path, fileName+str(aux)+sufixo)
+
+    # Salvo o arquivo arquivo como:
+    # Pasta do path / nome da thread arquivo / nome Arquivo + N_Arquivo + sufixo
+    wget.download(link, out=filePath)
+
+# Successfully downloaded
+# playsound('success.m4a')
