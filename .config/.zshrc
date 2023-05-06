@@ -2,24 +2,29 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:/home/arthur/.flutter/bin"
 export ZSH="/home/arthur/.oh-my-zsh"
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export ANDROID_HOME=~/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:/opt/google/chrome
 
 # Aliases for a few useful commands
-alias    l='ls -l'
-alias    la='ls -a'
-alias    lt='tree'
-alias    lta='tree -a'
-alias    ip='ifconfig'
-alias    x='ranger'
-alias    qq='exit'
-alias    lg='ls -l | grep'
-alias   ytdl='youtube-dl -f bestvideo+bestaudio'
+alias	l='ls -l'
+alias	la='ls -a'
+alias	lt='tree'
+alias	lta='tree -a'
+alias	ip='ifconfig'
+alias	x='ranger'
+alias	qq='exit'
+alias	lg='ls -l | grep'
+alias	ytdl='youtube-dl -f bestvideo+bestaudio'
+alias Pixel='emulator -noaudio -avd Pixel_5'
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -104,10 +109,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR='nvim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='vim'
 # fi
+
+export EDITOR 'nvim'
+export VISUAL 'nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -120,3 +128,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH=$PATH:/home/arthur/.spicetify
