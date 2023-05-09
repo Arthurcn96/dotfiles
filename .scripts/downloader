@@ -3,6 +3,8 @@
 import wget
 import bs4
 import requests
+import shutil
+from comparaImagens import ComparadorImagens
 import os
 
 link = input("Digite o link? ")
@@ -18,10 +20,13 @@ soup = bs4.BeautifulSoup(res.text, 'lxml')
 # Extraindo um elemento do site
 link = ''
 aux = 1
-path = "/home/arthur/Imagens/Wallpaper/"+fileName
+destination = "/home/arthur/Imagens/4chan/"+fileName
+tmp_folder = '/tmp'
 
-if not os.path.exists(path):
-    os.mkdir(path)
+# Valida se a pasta existe
+if not os.path.exists(destination):
+    print('Criando nova pasta para Thread')
+    os.mkdir(destination)
 else:
     print("Thread já existente. Redirecionando Arquivos")
 
@@ -31,16 +36,19 @@ for div in soup.find_all(class_="fileText", attrs={'href'}):
 
     # Divido o nome do arquivo baixado, pego o sufixo
     sufixo = '.' + wget.detect_filename(link).split('.')[-1]
-    filePath = os.path.join(path, fileName+str(aux)+sufixo)
+    fileDestination = os.path.join(destination, fileName+str(aux)+sufixo)
 
-    while os.path.isfile(filePath):
+    while os.path.isfile(fileDestination):
         aux += 1
-        filePath = ''
-        filePath = os.path.join(path, fileName+str(aux)+sufixo)
+        fileDestination = ''
+        fileDestination = os.path.join(destination, fileName+str(aux)+sufixo)
 
+    print(f"Salvando arquivo em {fileDestination}")
     # Salvo o arquivo arquivo como:
     # Pasta do path / nome da thread arquivo / nome Arquivo + N_Arquivo + sufixo
-    wget.download(link, out=filePath)
+    fileTmp = os.path.join(tmp_folder, fileName+str(aux)+sufixo)
+    wget.download(link, out=fileTmp)
+    shutil.move(fileTmp, destination)
 
 # Successfully downloaded
 # playsound('success.m4a')
