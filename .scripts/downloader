@@ -4,7 +4,7 @@ import wget
 import bs4
 import requests
 import shutil
-from comparaImagens import ComparadorImagens
+from compara import compara
 import os
 
 link = input("Digite o link? ")
@@ -19,7 +19,7 @@ soup = bs4.BeautifulSoup(res.text, 'lxml')
 
 # Extraindo um elemento do site
 link = ''
-aux = 1
+aux = 0
 destination = "/home/arthur/Imagens/4chan/"+fileName
 tmp_folder = '/tmp'
 
@@ -32,6 +32,7 @@ else:
 
 fileName = fileName + '_'
 for div in soup.find_all(class_="fileText", attrs={'href'}):
+    aux += 1
     link = "http:"+div.find('a')['href']
 
     # Divido o nome do arquivo baixado, pego o sufixo
@@ -43,12 +44,13 @@ for div in soup.find_all(class_="fileText", attrs={'href'}):
         fileDestination = ''
         fileDestination = os.path.join(destination, fileName+str(aux)+sufixo)
 
-    print(f"Salvando arquivo em {fileDestination}")
     # Salvo o arquivo arquivo como:
-    # Pasta do path / nome da thread arquivo / nome Arquivo + N_Arquivo + sufixo
     fileTmp = os.path.join(tmp_folder, fileName+str(aux)+sufixo)
     wget.download(link, out=fileTmp)
-    shutil.move(fileTmp, destination)
+
+    # Se nao existe copia
+    # Pasta do path / nome da thread arquivo / nome Arquivo + N_Arquivo + sufixo
+    compara(fileTmp, destination)
 
 # Successfully downloaded
 # playsound('success.m4a')
