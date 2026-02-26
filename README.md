@@ -10,6 +10,7 @@ I always struggle when I need to get all my configuration into a new machine, so
 ## Programs:
  - ### [Rofi](https://github.com/davatorium/rofi)
   <img  src="https://raw.githubusercontent.com/Arthurcn96/dotfiles/master/.images/animado.gif" style="display: block;" alt="gif_relogio" class="center" width="100%"> 
+ - ### Comecei a testar o [ULauncher](https://github.com/Ulauncher/Ulauncher), dentro da pasta `.scripts/ULauncher` tem uma extensão que desenvolvi pra usar com [Obsidian](https://github.com/obsidianmd/obsidian-releases/releases)
 
  - ### [Urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
    - [Resize](https://github.com/simmel/urxvt-resize-font) Plugin
@@ -18,5 +19,4 @@ I always struggle when I need to get all my configuration into a new machine, so
    - [Lightline](https://github.com/itchyny/lightline.vim)
    - [Emmet](https://github.com/mattn/emmet-vim)
    - [Nerd Tree](https://github.com/preservim/nerdtree)
-
-
+ - [Firefox Theme](https://codeberg.org/da157/PotatoFox)

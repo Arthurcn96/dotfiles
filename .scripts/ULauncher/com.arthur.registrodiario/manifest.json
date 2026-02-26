@@ -1,0 +1,54 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "Journal Entry",
+    "description": "Adiciona registros diários ao seu journal",
+    "developer_name": "Arthur",
+    "icon": "images/icon.png",
+    "options": {
+        "query_debounce": 0.1
+    },
+    "preferences": [
+        {
+          "id": "journal_dir",
+          "type": "text",
+          "name": "Registro Diário",
+          "description": "Caminho completo para a pasta onde estão os arquivos .md",
+          "default_value": "/home/arthur/Sync/Journal/Daily"
+        },
+        {
+          "id": "idea_file",
+          "type": "text",
+          "name": "Ideias",
+          "description": "Caminho completo para o arquivo de ideias",
+          "default_value": "/home/arthur/Sync/Atlas/Ideias.md"
+        },
+        {
+          "id": "lembrete_file",
+          "type": "text",
+          "name": "Lembretes",
+          "description": "Caminho completo para o arquivo de lembretes",
+          "default_value": "/home/arthur/Sync/Atlas/Lembrete.md"
+        },
+        {
+            "id": "registro_diario",
+            "type": "keyword",
+            "name": "Registro Diário",
+            "description": "Adicionar entrada ao journal",
+            "default_value": "d"
+        },
+        {
+              "id": "section_registro_diario",
+              "type": "text",
+              "name": "Regisátro Diário",
+              "description": "Título da seção no Markdown",
+              "default_value": "# Registros diários:"
+        },
+        {
+            "id": "section_todo_diario",
+            "type": "text",
+            "name": "Regisátro Diário",
+            "description": "Título da seção no TODO",
+            "default_value": "### Objetivos para hoje?"
+        }
+    ]
+}
